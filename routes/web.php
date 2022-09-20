@@ -3,6 +3,7 @@
 use App\Http\Controllers\ConditionalStatements;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Demo\DemoController;
+use App\Http\Controllers\StudentController;
 
 
 
@@ -51,6 +52,7 @@ Route::controller(DemoController::class)->group(function(){
 
 });
 
+Route::resource("/student", StudentController::class);
 // Route::get('/about',[DemoController::class,'index']);
 // Route::get('contact',[DemoController::class,'contactmethod']);
 
