@@ -4,6 +4,8 @@ use App\Http\Controllers\ConditionalStatements;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Demo\DemoController;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\LoopsController;
+
 
 
 
@@ -42,6 +44,8 @@ Route::get('/user/profile',function(){
 })->name('profile');
 Route::get('/user',[UserController::class, 'index']);
 Route::get('/conditional-statements',[ConditionalStatements::class, 'conditionalstatements']);
+Route::get('/loops-example',[LoopsController::class, 'loopsexample']);
+
 // Route::get('/contact', function () {
 //     return view('contact');
 // });
